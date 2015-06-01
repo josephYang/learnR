@@ -1,0 +1,5 @@
+mat1 <- matrix(1:4,2)
+mat2 <- eigen(mat1)
+mat3 <- solve(mat2$vectors)
+mat4 <- mat3%*%mat1%*%(mat2$vectors)
+print(mat4)
