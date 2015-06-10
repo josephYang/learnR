@@ -1,4 +1,5 @@
 data(cars)
 plot(cars$speed, cars$dist)
 lm.cars <- lm(cars$dist ~ cars$speed)
+print(lm.cars)
 abline(lm.cars)
